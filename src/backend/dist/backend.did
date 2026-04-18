@@ -1,0 +1,29 @@
+type Timestamp = int;
+type PrayerStatus = 
+ variant {
+   pending;
+   prayed;
+ };
+type PrayerRequest = 
+ record {
+   anonymous: bool;
+   createdAt: Timestamp;
+   id: nat;
+   message: text;
+   name: opt text;
+   status: PrayerStatus;
+ };
+service : {
+  createPrayerRequest: (name: opt text, message: text, anonymous: bool) ->
+   (nat);
+  deletePrayerRequest: (id: nat) -> (variant {
+                                       err: text;
+                                       ok;
+                                     });
+  getPrayerRequests: () -> (vec PrayerRequest) query;
+  updatePrayerRequestStatus: (id: nat, status: PrayerStatus) ->
+   (variant {
+      err: text;
+      ok;
+    });
+}

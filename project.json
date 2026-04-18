@@ -1,0 +1,21 @@
+{
+  "overview": "A Church Prayer Request Platform where congregation members can submit prayer requests publicly and admins can manage them through a protected dashboard. Features real-time request tracking, status management (Pending/Prayed), search and filtering, and a clean card-based UI with dark mode support.",
+  "features": [
+    "Public prayer request submission form with anonymous option",
+    "Admin dashboard with protected login via Internet Identity",
+    "Real-time prayer request management — mark as prayed or delete",
+    "Search and sort requests by name, message, or date",
+    "Toast notifications, confirmation dialogs, and loading states",
+    "Fully responsive mobile-first design with dark mode support"
+  ],
+  "category": "productivity",
+  "tags": [
+    "church",
+    "prayer",
+    "community",
+    "dashboard",
+    "admin",
+    "forms"
+  ],
+  "last_updated": "2026-04-18T13:34:25.369Z"
+}
